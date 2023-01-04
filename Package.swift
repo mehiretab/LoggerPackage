@@ -24,5 +24,10 @@ let package = Package(
         .testTarget(
             name: "LoggerPackageTests",
             dependencies: ["LoggerPackage"]),
+        .binaryTarget(
+            name: "UnityFramework",
+            url: "https://s3-infra.pulsemusic.com/ci-artifacts-storage/unity-ios-framework/v1.0.0/UnityFramework.xcframework.zip",
+            checksum: "2f929600283614ad3cea9f74edfecb10793abb97234a89bc981d05fa3d6a249d"
+        )
     ]
 )
